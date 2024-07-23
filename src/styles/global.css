@@ -1,0 +1,56 @@
+:root {
+	font-family: system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
+	font-size: 18px;
+	line-height: 1.45;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem max(5dvi, (100dvi - 1280px) / 2);
+
+	a[rel='home'] {
+		color: inherit;
+		font-size: 1.5rem;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	nav {
+		align-items: center;
+		display: flex;
+		gap: 1rem;
+		justify-content: end;
+
+		a {
+			color: inherit;
+			font-size: 1.5rem;
+			font-weight: 500;
+			text-decoration: none;
+		}
+	}
+}
+
+main {
+	inline-size: min(90dvi, 1280px);
+	margin-inline: auto;
+}
+
+img {
+	border-radius: 0.25rem;
+	display: block;
+	margin: 0;
+}
+
+.disguises {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+footer {
+	margin-block-start: 4rem;
+	padding: 1rem 2rem;
+	text-align: center;
+}

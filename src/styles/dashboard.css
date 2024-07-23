@@ -1,0 +1,101 @@
+h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+.saved {
+	background: color-mix(in oklch, green 20%, transparent);
+	border: 1px solid color-mix(in oklch, green 30%, transparent);
+	border-radius: 0.25rem;
+	inline-size: 600px;
+	margin-inline: auto;
+	padding: 1rem 2rem;
+	text-align: center;
+}
+
+.monster-chooser {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	margin-block-end: 4rem;
+
+	.monster-choice {
+		background: none;
+		border: none;
+		border-radius: 0.25rem;
+		block-size: auto;
+		inline-size: 200px;
+		padding: 0;
+	}
+}
+
+.disguise-builder {
+	inline-size: 400px;
+	margin-inline: auto;
+	position: relative;
+
+	.selected-monster {
+		block-size: 400px;
+		display: block;
+		inline-size: 400px;
+
+		img {
+			display: block;
+			inline-size: 100%;
+		}
+	}
+
+	.selected-disguise {
+		inset: 0;
+		position: absolute;
+
+		img {
+			display: block;
+			inline-size: 100%;
+		}
+	}
+
+	.disguise-choices {
+		display: flex;
+		gap: 2rem;
+		margin-block-start: 1rem;
+
+		button {
+			background: none;
+			border: 1px solid #ddd;
+			border-radius: 0.25rem;
+			block-size: 100px;
+			display: block;
+			inline-size: 100px;
+			padding: 0;
+		}
+
+		img {
+			display: block;
+			block-size: 100%;
+			inline-size: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+.save-button {
+	display: flex;
+	justify-content: center;
+	padding: 4rem;
+
+	button {
+		background-color: blue;
+		border: none;
+		border-radius: 0.25rem;
+		color: white;
+		font-size: 2rem;
+		padding: 0.5rem 1rem;
+	}
+}
+
+.disguises {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
